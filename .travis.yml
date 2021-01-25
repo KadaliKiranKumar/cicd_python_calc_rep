@@ -8,7 +8,4 @@ install:
   - pip install pytest-cov
   - pip install .
 script:
-  - pytest --cov-report=xml --cov=deeptabular tests/
-
-after_success:
-  - codecov
+  - pytest -q test_calculator.py
