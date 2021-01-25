@@ -7,4 +7,4 @@ scripts:
   value: pytest
 - name: lints
   description: Executes linting tools
-  value: pylint src && flake8 src --statistics --count
+  value: pylint cicd_python_calc_rep && flake8 cicd_python_calc_rep --statistics --count
