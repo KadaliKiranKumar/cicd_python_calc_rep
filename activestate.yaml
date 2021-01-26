@@ -4,7 +4,8 @@ languages:
 scripts:
 - name: tests
   description: Executes tests
-  value: pytest
+  value: python -m pytest
 - name: lints
   description: Executes linting tools
-  value: pylint calculator.py && flake8 calculator.py --statistics --count
+  value: python -m pylint calculator.py
+standalone: true
